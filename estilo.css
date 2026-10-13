@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' ;
+}
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdHJr0L1aJ1s310g_2C3Ht9Z0suPkZ6oSbb1Jqr-x_2g&s=10);
+    background-size: cover;
+}
+
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+    background-color: red;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(73, 93, 204, 0.5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: rgb(32, 34, 158);
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+
+
+
+img {
+width: 350px;
+display: block;
+margin: 0 auto;
+border-radius: 16px;
+}
+
+h1 {
+text-align:center;
+color: rgb(0, 0, 0);
+}
+
+h2 {
+text-align: center;
+color: black;
+
+}
+
+p {
+font-size: larger;
+font-family: 'Open Sans' ;
+text-align: justify;
+color: rgb(10, 10, 10);
+}
+
+.contenedor {
+  width: 100%; /* O el ancho que prefieras para tu sección */
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.imagen-derecha {
+  /* Envía la imagen al extremo derecho y hace que el texto la envuelva */
+  float: right; 
+  
+  /* Define el tamaño de tu imagen */
+  width: 300px; 
+  height: auto;
+  
+  /* Márgenes importantes: Dale espacio al texto por la izquierda (margin-left) 
+     y por abajo (margin-bottom) para que no se pegue a la imagen */
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Buena práctica: Limpieza de flujos */
+.contenedor::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li {
+font-size: x-large;
+
+
+}
+
+
+
+
+
